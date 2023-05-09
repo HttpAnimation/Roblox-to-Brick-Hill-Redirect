@@ -1,11 +1,13 @@
 const redirectUrl = "https://www.brick-hill.com/dashboard";
 
+function redirect(requestDetails) {
+  if (requestDetails.url.includes("roblox.com")) {
+    return {redirectUrl: redirectUrl};
+  }
+}
+
 browser.webRequest.onBeforeRequest.addListener(
-  function(details) {
-    if (details.url.includes("roblox.com")) {
-      return {redirectUrl: redirectUrl};
-    }
-  },
+  redirect,
   {urls: ["<all_urls>"]},
   ["blocking"]
 );
