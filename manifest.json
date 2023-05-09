@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "Roblox to Brick Hill Redirect",
+    "version": "1.0",
+    "description": "Made by HttpAnimations, Redirects roblox.com to https://www.brick-hill.com/dashboard",
+    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
+  
