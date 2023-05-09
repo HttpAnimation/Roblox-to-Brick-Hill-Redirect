@@ -4,8 +4,7 @@
   "version": "1.0",
   "description": "Redirects roblox.com to https://www.brick-hill.com/dashboard",
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "permissions": [
     "webRequest",
